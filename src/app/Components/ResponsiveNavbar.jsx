@@ -81,7 +81,8 @@ export const Sidebar = ({ navItems = [], className = "" }) => {
 
   return (
     <>
-      <div className="fixed z-[5002] top-2 right-1">
+      <div className={`fixed z-[5002] ${pathname=='/eyes' ?
+      'top-12 right-2' : 'top-4 right-2' }`}>
         <button 
           className={`block py-1 px-3 border-2 bg-gray-900 text-current rounded-lg hover:bg-black/5 dark:hover:bg-white/5 ${
             isOpen ? 'border-red-400' : 'border-lime-400'

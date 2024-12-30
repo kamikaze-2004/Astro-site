@@ -52,7 +52,7 @@ export default function RootLayout({ children }) {
       return (
         <html lang="en" style={{scrollBehavior:'smooth'}}>
       <title>Astroclub AU</title>
-      <head><link rel='icon' href='/images/astrologotrue.jpg'/></head>
+      <head><link rel='icon' href='/images/astrologo-circle.png' /></head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

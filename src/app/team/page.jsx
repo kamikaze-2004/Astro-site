@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion';
 
 function Team(){
+    const placeholder='Placeholder text -> needs tagline ASAP';
     const team = [
         {
             name: 'RAGURAM C',
@@ -18,13 +19,13 @@ function Team(){
         {
             name: 'NEHAVARTHINI M',
             position: 'DIRECTOR OF PROJECTS',
-            tag: 'Turning ideas into reality',
+            tag: placeholder,
             link: '/images/team/neha.jpg',
         },
         {
             name: 'SHAKTHI SRIRAM',
             position: 'DIRECTOR OF PROJECTS',
-            tag: 'Innovation through collaboration',
+            tag: placeholder,
             link: '/images/team/Shakthi.jpg',
         },
         {
@@ -42,7 +43,7 @@ function Team(){
         {
             name: 'VISHWA PRIYA S',
             position: 'QMS SENIOR LEAD ',
-            tag: 'Quality in every detail',
+            tag: placeholder,
             link: '/images/team/vishwapriya.jpg',
         },
         {
@@ -54,25 +55,25 @@ function Team(){
         {
             name: 'BALA SABARISH SH',
             position: 'EVENTS AND WORKSHOP SENIOR LEAD ',
-            tag: 'Making every event memorable',
+            tag: placeholder,
             link: '/images/team/bala.jpg',
         },
         {
             name: 'PRAVEENA M',
             position: 'WORKSHOP SENIOR LEAD ',
-            tag: 'Learning through experience',
+            tag: placeholder,
             link: '/images/team/praveena.jpg',
         },
         {
             name: 'RIGINSTA R',
             position: 'DESIGN SENIOR LEAD ',
-            tag: 'Where creativity meets purpose',
+            tag: placeholder,
             link: '/images/team/riginsta.jpg',
         },
         {
             name: 'SRIVARSHINI R',
             position: 'CONTENT SENIOR LEAD ',
-            tag: 'Words that inspire action',
+            tag: placeholder,
             link: '/images/team/srivarshini.jpg',
         },
         {
@@ -123,7 +124,7 @@ function Team(){
                     {team.map((member, index) => (
                         <motion.div 
                             key={member.name}
-                            className="bg-black/40 backdrop-blur-sm border border-gray-800 rounded-lg overflow-hidden"
+                            className="bg-black/40 backdrop-blur-sm border border-gray-800 hover:border-lime-200 rounded-lg overflow-hidden"
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: index * 0.1 }}

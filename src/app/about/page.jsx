@@ -23,7 +23,7 @@ function About() {
                 text={
                   "We are an active group of space enthusiasts from Anna University, Chennai. Since the club's inception in 2018, we have actively conducted several events and discussions on topics related to astronomy. We motivate our students to aspire for space-based careers by providing them appropriate guidance through our experienced group of alumni."
                 }
-                speed={0.03} 
+                speed={0.009} 
               />
             </div>
             <div className="flex justify-center items-center">
@@ -55,7 +55,7 @@ function About() {
                 text={
                     "We as a club strive to make astronomy accessible to the public. We educate our students about the need for research in astronomy and space sciences. We aim to promote Dark-Sky Friendly Lighting practices to ensure that our night sky is preserved for the current and future generations to come."
                 }
-                speed={0.03} 
+                speed={0.009} 
               />
             </div>
 

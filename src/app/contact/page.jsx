@@ -47,7 +47,7 @@ function Contacts()
         <div className="p-4 w-full rounded-3xl border-2 border-transparent lg:border-white justify-center">
         <h1 className="oswald text-5xl text-center font-bold text-lime-400 my-2 p-2 space-y-4">CONTACTS</h1>
         <GoogleMap />
-        <div className="my-6 lg:my-12 px-8  flex  justify-around lg:justify-center gap-5 lg:gap-0 items-center">
+        <div className="my-6 lg:my-12 px-4  flex  justify-around lg:justify-center gap-5 lg:gap-0 items-center">
             {socials.map((social)=>(
                 <span key={social.social} className="scale-150 backdrop-blur-sm border-2 bg-slate-800 p-1  border-lime-400 rounded-xl transistion-colors duration-300 ease-in-out hover:text-lime-400 hover:scale-110">
                 <a href={social.link}>{social.icon}</a>
