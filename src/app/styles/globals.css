@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-infinite {
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes floatAround {
+  0% {
+    transform: translate(0vw, 0vh) rotate(0deg); /* Start position */
+  }
+  15% {
+    transform: translate(25vw, -15vh) rotate(45deg); /* Move randomly */
+  }
+  30% {
+    transform: translate(-30vw, 20vh) rotate(90deg); /* Move randomly */
+  }
+  45% {
+    transform: translate(10vw, 10vh) rotate(135deg); /* Move randomly */
+  }
+  60% {
+    transform: translate(-25vw, -30vh) rotate(180deg); /* Move randomly */
+  }
+  75% {
+    transform: translate(30vw, 5vh) rotate(225deg); /* Move randomly */
+  }
+  90% {
+    transform: translate(-15vw, 15vh) rotate(270deg); /* Move randomly */
+  }
+  100% {
+    transform: translate(20vw, -10vh) rotate(360deg); /* End position */
+  }
+}
+
+.float-around1 {
+  animation: floatAround 30s ease-in-out infinite;
+  position: absolute;
+  bottom: 30%;
+  right: 30%;
+  pointer-events: none;
+}
+
+.float-around2 {
+  animation: floatAround 30s ease-in-out infinite;
+  position: absolute;
+  top: 30%;
+  left: 70%;
+  transform-origin: center;
+  pointer-events: none;
+}
+
+
+.planet1 {
+  width: 40px;
+  height: 35px;
+  background-image: url("/images/planetshine.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+
+
+
+
