@@ -106,17 +106,17 @@ export default function Home() {
               <motion.img
                 src="/images/astrologo.png"
                 alt="astrologo"
-                className=" relative  w-48 h-32 mt-0  lg:h-68 md:h-68 my-20  object-contain opacity-80 space-y-16"
+                className=" relative  w-40 h-32 mt-[-88] lg:mt-10 lg:w-44 lg:h-44  lg:h-68 md:h-68 mb-20  object-contain opacity-80 space-y-16"
                 animate={isMobile ? {
-                  scale: 6,
+                  scale: 5,
                 } : {
-                  scale: 6,
+                  scale: 5,
                 }}
               />
             </motion.div>
           </div>
 
-          <div className="relative row-span-2 flex items-center justify-center w-full mt-8 md:w-2/3 px-4 md:px-12">
+          <div className="relative row-span-2 flex items-center justify-center w-full mt-8 mb-0 md:w-2/3 px-4 md:px-12">
             <motion.div 
               className=" absolute text-center space-y-6"
               key={currindex}
@@ -128,10 +128,10 @@ export default function Home() {
                 ease: easeInOut,
               }}
             >
-              <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold">
+              <h1 className="oswald text-3xl text-lime-300 md:text-4xl lg:text-5xl xl:text-6xl font-bold">
                 {contents[currindex].title}
               </h1>
-              <p className="text-lg md:text-xl lg:text-2xl text-gray-200 max-w-2xl">
+              <p className="text-lg md:text-xl ml-4 lg:text-2xl text-gray-200 max-w-2xl">
                 {contents[currindex].contents}
               </p>
               <button
@@ -149,7 +149,7 @@ export default function Home() {
 
         <section className=" min-h-screen px-4 py-16 bg-black/30 backdrop-blur-sm" id='apod'>
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-16">
+            <h2 className="oswald text-lime-300 text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-16">
               Astronomy Picture of the Day
             </h2>
             <APODSection isLoading={isLoading} apodData={apodData} />

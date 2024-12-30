@@ -1,13 +1,12 @@
 "use client"
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 function Team(){
     const team = [
         {
             name: 'RAGURAM C',
             position: 'PRESIDENT',
-            tag: 'Leading with vision and purpose',
+            tag: "I'm Raguram, a geoinformatics student by day and stargazer by night. As President of the Astro Club, I'm passionate about exploring the wonders of our universe and uncovering the secrets of the cosmos. When I'm not mapping the Earth, you can find me gazing up at the stars, lost in the beauty and mystery of it all.",
             link: '/images/team/raguram.jpg',
         },
         {
@@ -31,13 +30,13 @@ function Team(){
         {
             name: 'RAVIKRISHNA B',
             position: 'HR SENIOR LEAD ',
-            tag: 'Building stronger teams together',
+            tag: 'Hi 👋 I am Ravikrishna😉',
             link: '/images/team/ravi.jpg',
         },
         {
             name: 'SIVANI K U',
             position: 'HR SENIOR LEAD ',
-            tag: 'Empowering people, enabling growth',
+            tag: 'People are our constellations, together we shine!',
             link: '/images/team/sivani.jpg',
         },
         {
@@ -49,7 +48,7 @@ function Team(){
         {
             name: 'KAMATCHI R',
             position: 'MEDIA AND MARKETING SENIOR LEAD ',
-            tag: 'Creating compelling stories',
+            tag: 'Marketing Beyond the Milkyway',
             link: '/images/team/kamatchi.jpg',
         },
         {
@@ -79,7 +78,7 @@ function Team(){
         {
             name: 'SWATTIK MUKHOPADHYAY',
             position: 'PROJECTS SENIOR LEAD ',
-            tag: 'Bringing ideas to life',
+            tag: 'Oh hi ....Interested in knowing and exploring space by remote sensing',
             link: '/images/team/swattik.jpg',
         },
         {
@@ -110,7 +109,7 @@ function Team(){
             
             <div className="relative z-10 px-4 sm:px-6 lg:px-8 py-8 max-w-7xl mx-auto">
                 <motion.h1 
-                    className="text-center text-4xl sm:text-5xl lg:text-6xl font-bold mb-8 sm:mb-12 lg:mb-16"
+                    className="oswald text-center mt-12 text-5xl text-lime-300 sm:text-5xl lg:text-5xl font-bold mb-8 sm:mb-12 lg:mb-16"
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
@@ -151,7 +150,7 @@ function Team(){
                                 <p className="text-lime-400 font-medium text-sm sm:text-base">
                                     {member.position}
                                 </p>
-                                <p className="text-gray-300 text-xs sm:text-sm italic line-clamp-2">
+                                <p className={`text-gray-300 text-sm  italic ${member.tag.length >= 100 ? 'line-clamp-7' : 'line-clamp-2' } `}>
                                     "{member.tag}"
                                 </p>
                             </motion.div>
