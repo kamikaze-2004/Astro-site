@@ -41,7 +41,7 @@ export default function Home() {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrIndex((prevIndex) => (prevIndex + 1) % contents.length);
-    }, 5000);
+    }, 3000);
 
     return () => clearInterval(intervalId);
   }, []);
@@ -106,7 +106,7 @@ export default function Home() {
               <motion.img
                 src="/images/astrologo.png"
                 alt="astrologo"
-                className=" relative  w-40 h-32 mt-[-88] lg:mt-10 lg:w-44 lg:h-44  lg:h-68 md:h-68 mb-20  object-contain opacity-80 space-y-16"
+                className=" relative  w-40 h-32 mt-[-150]  lg:mt-10 lg:w-44 lg:h-44  lg:h-68 md:h-68 mb-32  object-contain opacity-80 space-y-16"
                 animate={isMobile ? {
                   scale: 5,
                 } : {
@@ -124,7 +124,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -50 }}
               transition={{
-                duration: 1,
+                duration: 0.5,
                 ease: easeInOut,
               }}
             >
