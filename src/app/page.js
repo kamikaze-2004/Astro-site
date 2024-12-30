@@ -7,7 +7,7 @@ import { isMobile } from "react-device-detect";
  
 export default function Home() {
   const router = useRouter();
-  const apiKey = process.env.NEXT_PUBLIC_NASA_API_KEY;
+  const apiKey = process.env.NASA_API_KEY;
   const apodUrl = useMemo(() => `https://api.nasa.gov/planetary/apod?api_key=${apiKey}`, [apiKey]);
   
   const contents = [
