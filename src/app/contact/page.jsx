@@ -34,7 +34,7 @@ const socials = [
 function Contacts()
 {
     return(
-         <div className="relative min-h-screen bg-gray-900 text-white p-4 md:p-8 overflow-hidden ">
+         <div className="relative min-h-screen bg-gray-900 min-w-full text-white p-4 md:p-8 overflow-hidden ">
         <div className="fixed inset-0 z-0">
         <img 
           src='/images/iss.jpg'
@@ -49,7 +49,7 @@ function Contacts()
         <GoogleMap />
         <div className="my-6 lg:my-12 px-4  flex  justify-around lg:justify-center gap-5 lg:gap-0 items-center">
             {socials.map((social)=>(
-                <span key={social.social} className="scale-150 backdrop-blur-sm border-2 bg-slate-800 p-1  border-lime-400 rounded-xl transistion-colors duration-300 ease-in-out hover:text-lime-400 hover:scale-110">
+                <span key={social.social} className="scale-150 backdrop-blur-sm gap-2 border-2 bg-slate-800 p-1  border-lime-400 rounded-xl transistion-colors duration-300 ease-in-out hover:text-lime-400 hover:scale-110">
                 <a href={social.link}>{social.icon}</a>
                 </span>
             ))}

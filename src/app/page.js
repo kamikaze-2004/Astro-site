@@ -74,7 +74,7 @@ export default function Home() {
   };
   
   return (
-    <div className="relative text-white min-h-screen overflow-hidden">
+    <div className="relative text-white min-h-[100vh] min-w-full overflow-hidden">
       <div className="fixed inset-0 z-0">
         <img
           src="/images/bg.jpg"

@@ -45,7 +45,7 @@ function Events()
         link && ['jpg', 'png', 'jpeg'].includes(link.split('.').pop().toLowerCase());
 
     return (
-        <div className="relative min-h-screen bg-gray-900 text-white p-4 md:p-8">
+        <div className="relative min-h-screen min-w-full bg-gray-900 text-white p-4 md:p-8">
             <div className="fixed inset-0 z-0">
                 <img 
                     src='/images/full-moon.jpg'

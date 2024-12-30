@@ -92,7 +92,7 @@ function Team(){
 
     return (
         <motion.div 
-            className="relative text-white min-h-screen overflow-hidden"
+            className="relative text-white min-h-screen min-w-full overflow-hidden"
             initial="hidden"
             animate="visible"
         >

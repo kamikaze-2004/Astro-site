@@ -4,7 +4,7 @@ import { TypingText } from "../Components/TypingText";
 
 function About() {
   return (
-    <div className="relative min-h-screen text-white">
+    <div className="relative min-h-screen min-w-full text-white">
       <div className="fixed inset-0 z-0">
         <img 
           src='/images/aurora.jpg'
