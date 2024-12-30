@@ -82,7 +82,7 @@ const NewsPage = () => {
         />
         <div className="absolute inset-0 bg-black/30" />
       </div>
-      <h1 className="relative text-4xl font-bold mb-8 text-center">Space News</h1>
+      <h1 className="oswald relative mt-6 text-5xl font-bold mb-8 text-center text-lime-300">Space News</h1>
       {loading ? (
         <div className="flex justify-center items-center h-64">
           <Loader2 className="w-8 h-8 animate-spin" />

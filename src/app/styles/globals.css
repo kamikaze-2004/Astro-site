@@ -1,10 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+.oswald {
+  font-family: "Oswald", sans-serif;
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;
+}
+
+:root {
+  --font-primary: "Roboto", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,7 +27,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-primary);
 }
 
 html,
@@ -84,7 +94,6 @@ body {
   pointer-events: none;
 }
 
-
 .planet1 {
   width: 40px;
   height: 35px;
@@ -92,9 +101,3 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
 }
-
-
-
-
-
-

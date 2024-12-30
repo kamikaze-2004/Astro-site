@@ -1,12 +1,12 @@
 "use client";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./styles/globals.css";
-import NavBar from "./Components/Navbar";
 import Loader from "./Components/Loader";
 import { Footer } from "./Components/Footer";
 import { useEffect,useState } from "react";
 import { ScrollToTopButton } from "./Components/ScrollToTop";
 import { usePathname } from "next/navigation";
+import ResponsiveNavBar from "./Components/ResponsiveNavbar";
 
 
 const geistSans = Geist({
@@ -39,6 +39,7 @@ export default function RootLayout({ children }) {
   
   const path=usePathname();
   const [loading,setLoading] = useState(true);
+  
   useEffect(()=>
     {
       const timer=setTimeout(()=>
@@ -56,7 +57,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {loading ? <Loader/>:
-       <div>       <NavBar navItems={navItems} className="fixed z-50  " />
+       <div>       <ResponsiveNavBar navItems={navItems} className="fixed z-50  " />
         {children}
         <ScrollToTopButton/>
         </div>
