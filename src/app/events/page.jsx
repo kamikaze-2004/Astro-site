@@ -53,7 +53,7 @@ function Events()
         link && ['jpg', 'png', 'jpeg'].includes(link.split('.').pop().toLowerCase());
 
     return (
-        <div className="relative min-h-screen min-w-full bg-gray-900 text-white p-4 md:p-8">
+        <div className="relative min-h-screen min-w-full bg-gray-900 text-white p-4 md:p-8 overflow-hidden">
             <div className="fixed inset-0 z-0">
                 <img 
                     src='/images/full-moon.jpg'
@@ -63,7 +63,7 @@ function Events()
                 <div className="absolute inset-0 bg-black/30" />
             </div>
             
-            <h1 className="relative oswald text-6xl text-center font-bold mt-8 lg:mt-20 mb-10 text-lime-300">
+            <h1 className="relative oswald text-6xl text-center  font-bold mt-16 lg:mt-20 mb-10  text-lime-300">
                 Events
             </h1>
             
