@@ -69,7 +69,7 @@ function Team(){
         },
         {
             name: 'PRAVEENA M',
-            position: 'WORKSHOP SENIOR LEAD ',
+            position: 'EVENTS AND WORKSHOP SENIOR LEAD  ',
             tagline: "The stars don't look bigger, but they do look brighter.",
             link: '/images/team/praveena.jpg',
             tag:'purple',
@@ -98,7 +98,7 @@ function Team(){
         {
             name: 'HARIGURU J',
             position: 'PROJECTS SENIOR LEAD ',
-            tagline: "Remeber, We are made of Stardust , the vast cosmos is rightfully ours to conquer.",
+            tagline: "Technically we are made of Stardust , so the vast cosmos is rightfully ours to conquer.",
             link: '/images/team/hari.jpg',
             tag:'purple',
         }
