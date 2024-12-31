@@ -2,91 +2,105 @@
 import { motion } from 'framer-motion';
 
 function Team(){
-    const placeholder='Placeholder text -> needs tagline ASAP';
     const team = [
         {
             name: 'RAGURAM C',
             position: 'PRESIDENT',
-            tag: "I'm Raguram, a geoinformatics student by day and stargazer by night. As President of the Astro Club, I'm passionate about exploring the wonders of our universe and uncovering the secrets of the cosmos. When I'm not mapping the Earth, you can find me gazing up at the stars, lost in the beauty and mystery of it all.",
+            tagline: "I'm Raguram, a geoinformatics student by day and stargazer by night. As President of the Astro Club, I'm passionate about exploring the wonders of our universe and uncovering the secrets of the cosmos. When I'm not mapping the Earth, you can find me gazing up at the stars, lost in the beauty and mystery of it all.",
             link: '/images/team/raguram.jpg',
+            tag:'orange',
+
         },
         {
             name: 'JEYASURIYA',
             position: 'VICE PRESIDENT',
-            tag: "If you think you understand the size of the sun, then you probably don't",
+            tagline: "If you think you understand the size of the sun, then you probably don't",
             link: '/images/team/suriya.jpg',
+            tag:'purple',
         },
         {
             name: 'NEHAVARTHINI M',
             position: 'DIRECTOR OF PROJECTS',
-            tag: placeholder,
+            tagline: 'A researcher unveiling the Moon’s hidden tales, crater by crater.',
             link: '/images/team/neha.jpg',
+            tag:'orange',
         },
         {
             name: 'SHAKTHI SRIRAM',
             position: 'DIRECTOR OF PROJECTS',
-            tag: placeholder,
+            tagline: "A human that converts Caffeine into Code ",
             link: '/images/team/Shakthi.jpg',
+            tag:'orange',
         },
         {
             name: 'RAVIKRISHNA B',
             position: 'HR SENIOR LEAD ',
-            tag: 'Hi 👋 I am Ravikrishna😉',
+            tagline: 'The moon and I are alike- never lonely,just beautifully alone',
             link: '/images/team/ravi.jpg',
+            tag:'purple',
         },
         {
             name: 'SIVANI K U',
             position: 'HR SENIOR LEAD ',
-            tag: 'People are our constellations, together we shine!',
+            tagline: 'People are our constellations, together we shine!',
             link: '/images/team/sivani.jpg',
+            tag:'purple',
         },
         {
             name: 'VISHWA PRIYA S',
             position: 'QMS SENIOR LEAD ',
-            tag: "Dear Sirius, please don't be jealous",
+            tagline: "Dear Sirius, please don't be jealous",
             link: '/images/team/vishwapriya.jpg',
+            tag:'purple',
         },
         {
             name: 'KAMATCHI R',
             position: 'MEDIA AND MARKETING SENIOR LEAD ',
-            tag: 'Marketing Beyond the Milkyway',
+            tagline: 'Marketing Beyond the Milkyway',
             link: '/images/team/kamatchi.jpg',
+            tag:'purple',
         },
         {
             name: 'BALA SABARISH SH',
             position: 'EVENTS AND WORKSHOP SENIOR LEAD ',
-            tag: placeholder,
+            tagline: "We've always defined ourselves by our ability to overcome the impossible. And we count these moments. These moments when we dare to aim higher, to break barriers, to reach for the stars, to make the unknown known.",
             link: '/images/team/bala.jpg',
+            tag:'purple',
         },
         {
             name: 'PRAVEENA M',
             position: 'WORKSHOP SENIOR LEAD ',
-            tag: "The stars don't look bigger, but they do look brighter.",
+            tagline: "The stars don't look bigger, but they do look brighter.",
             link: '/images/team/praveena.jpg',
+            tag:'purple',
         },
         {
             name: 'RIGINSTA R',
             position: 'DESIGN SENIOR LEAD ',
-            tag: placeholder,
+            tagline: "Present is all you have for every betterment u wish for in the future!!!",
             link: '/images/team/riginsta.jpg',
+            tag:'purple',
         },
         {
             name: 'SRIVARSHINI R',
             position: 'CONTENT SENIOR LEAD ',
-            tag: placeholder,
+            tagline: 'Hey, I’m Srivarshini, the Astro Club’s content lead! Writing cosmic tales with a feminist spark—because the stars aren’t the only things breaking barriers.',
             link: '/images/team/srivarshini.jpg',
+            tag:'purple',
         },
         {
             name: 'SWATTIK MUKHOPADHYAY',
             position: 'PROJECTS SENIOR LEAD ',
-            tag: 'Oh hi ....Interested in knowing and exploring space by remote sensing',
+            tagline: 'Oh hi ....Interested in knowing and exploring space by remote sensing',
             link: '/images/team/swattik.jpg',
+            tag:'purple',
         },
         {
             name: 'HARIGURU J',
             position: 'PROJECTS SENIOR LEAD ',
-            tag: 'No amount of money ever bought a second of time',
+            tagline: "Remeber, We are made of Stardust , the vast cosmos is rightfully ours to conquer.",
             link: '/images/team/hari.jpg',
+            tag:'purple',
         }
     ];
 
@@ -145,14 +159,14 @@ function Team(){
                             <motion.div 
                                 className="p-4 sm:p-6 space-y-1 sm:space-y-2"
                             >
-                                <h2 className="text-xl sm:text-2xl font-bold tracking-tight line-clamp-1 ">
+                                <h2 className={`text-xl sm:text-2xl font-bold tracking-tight line-clamp-1 ${member.tag == 'orange' ? 'text-orange-400' : 'text-purple-400'} `}>
                                     {member.name}
                                 </h2>
                                 <p className="text-lime-400 font-medium text-sm sm:text-base">
                                     {member.position}
                                 </p>
-                                <p className={`text-gray-300 text-sm  italic ${member.tag.length >= 100 ? 'line-clamp-7' : 'line-clamp-2' } `}>
-                                    "{member.tag}"
+                                <p className={`text-gray-300 text-sm  italic ${member.tagline.length >= 100 ? 'line-clamp-7' : 'line-clamp-2' } `}>
+                                    "{member.tagline}"
                                 </p>
                             </motion.div>
                         </motion.div>

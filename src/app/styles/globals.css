@@ -96,8 +96,9 @@ body {
 
 .planet1 {
   width: 40px;
-  height: 35px;
-  background-image: url("/images/planetshine.svg");
+  height: 40px;
+  background-image: url("/images/ufo.png");
   background-repeat: no-repeat;
+  background-color: transparent;
   background-size: contain;
 }

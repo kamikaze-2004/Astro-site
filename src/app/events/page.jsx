@@ -4,48 +4,49 @@ function Events()
 {
     const events = [
         {
-            title:'INTERNATIONAL SPACEDAY WITH ARJIT SAXENA',
+            title:'National Space Day - Session on Indian Space Program and Entrepreneurship',
             date:'24/08/24',
             link:'/images/event/gmeet.jpg',
-            summary:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+            summary:'An insightful online session titled “Introduction to Indian Space Program and Entrepreneurship” was hosted by Arjit Saxena, founder of Resolute Lab of India, on 24th August 2024 from 7:00 PM to 8:30 PM. The session discussed India’s space journey and explored entrepreneurial opportunities within the sector, drawing significant participation.'
         },
         {
-            title:"Planeterium Dome - CELESTIA'24",
+            title:"Planeterium Dome - SPACEWEEK",
             date:'08/10/24',
             link:'/images/event/dome.jpg',
-            summary:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            summary:'As a part of International Space week celebration,Astro Club set up a Planetary Show from 8th to 10th October  at Vivekananda Auditorium. The event attracted over 200 registrations per day and featured various space exhibits that piqued the interest of both students ,visitors and professionals.',
         },
         {
-            title:"ESCAPE ROOM - CELESTIA'24",
+            title:"ESCAPE ROOM - SPACEWEEK",
             date:'09/10/24',
             link:'/images/event/escaperoom-celestia.jpg',
-            summary:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            summary:'The Escape Room event, conducted as part of the exhibition on 9th October,  This event involved solving multiple aptitude questions and puzzles to unlock the clue to next part of the puzzle which will eventually leads to the final clue for the puzzle. It turned out be massive success, drawing large crowds.',
         },
         
         {
-            title:"Birla Science exhibition - CELESTIA'24",
+            title:"Birla Science exhibition - SPACEWEEK",
             date:'09/10/24',
             link:'/images/event/exhibition.jpg',
-            summary:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            summary:'As a part of International Space week celebration,Astro Club organised a science exhibition from 8th to 10th October at Vivekananda Auditorium. The event attracted all people irrespective of their age  and featured various exhibits like Tower of Hanoi , Odessy and other interactive activities that piqued the interest of both students ,visitors and professionals.',
         },
         {
             title:"Meme Contest",
             date:'08/10/24',
-            link:'/images/event/meme_contest.jpg',
-            summary:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            link:'/images/event/meme_poster.jpg',
+            summary:'We ,Astro club, organised a Meme contest as a part of the International space week celebration events, to make awareness about the concepts of astronomy by popular culture of memes. This event attracted lots of participants and each expelled in a certain way to showcase their creative thinking',
         },
         {
-            title:'CROSSWORD - AGNI',
-            date:'9/11/24',
-            link:'/images/event/crossword.jpg',
-            summary:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        },
-        {
-            title:'ESCAPE ROOM 2.0 - AGNI',
-            date:'10/11/24',
+            title:"ESCAPE ROOM 2.0 - AGNI'24",
+            date:'09/11/24',
             link:'/images/event/agni-er.jpg',
-            summary:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+            summary:"The Escape Room 2.0 event, conducted as part of the AGNI'24 on 9th November . This event involved solving aptitude questions ,puzzles and Morse codes to unlock the clue to next part of the puzzle which will eventually leads to the final clue for the puzzle. This event was also a major success following the previous Escape room event.",
+        },
+        {
+            title:"CROSSWORD - AGNI'24",
+            date:'10/11/24',
+            link:'/images/event/crossword.jpg',
+            summary:"The Space Crossword Puzzle event, conducted as part of the AGNI'24 on 10th November . This event involved solving puzzles with a fusion of treasure hunt theme . This event was a great start for informal events to attract people towards our club's ideology . All of the participants enjoyed played with and against their friends and they had a good time.",
         }
+        
     ];
 
     const isImage = (link) => 

@@ -34,7 +34,6 @@ export default function Home() {
   ];
   
   const [currindex, setCurrIndex] = useState(0);
-  const [isHovered, setIsHovered] = useState(false);
   const [isLoading, setisLoading] = useState(true);
   const [apodData, setApodData] = useState(null);
   
@@ -100,8 +99,6 @@ export default function Home() {
           <div className="w-full md:w-1/3  flex items-center justify-center mb-8 md:mb-0">
             <motion.div
               className="relative "
-              onHoverStart={() => setIsHovered(true)}
-              onHoverEnd={() => setIsHovered(false)}
             >
               <motion.img
                 src="/images/astrologo.png"
