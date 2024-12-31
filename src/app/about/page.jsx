@@ -50,7 +50,7 @@ function About() {
             </div>
             <div className="flex flex-col justify-start items-center md:items-start lg:items-start">
               <TypingText classN={'oswald text-5xl  mb-2 font-bold'} text={'Our Vision'} speed={0.01}/>
-              <TypingText classN={'text-xl font-semibold mt-2 mb-1'} text={'To inspire humanity – in Science and Astronomy.'} speed={0.02}/>
+              <p className={'text-xl font-semibold mt-2 mb-1'} >To inspire humanity – in Science and Astronomy.</p>
               <TypingText
                 text={
                     "We as a club strive to make astronomy accessible to the public. We educate our students about the need for research in astronomy and space sciences. We aim to promote Dark-Sky Friendly Lighting practices to ensure that our night sky is preserved for the current and future generations to come."

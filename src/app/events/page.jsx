@@ -29,14 +29,21 @@ function Events()
             summary:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
         },
         {
-            title:'ESCAPE ROOM 2.0 - AGNI',
-            date:'10/11/24',
-            link:'/images/event/agni-er.jpg',
+            title:"Meme Contest",
+            date:'08/10/24',
+            link:'/images/event/meme_contest.jpg',
             summary:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        }, {
+        },
+        {
             title:'CROSSWORD - AGNI',
             date:'9/11/24',
             link:'/images/event/crossword.jpg',
+            summary:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        },
+        {
+            title:'ESCAPE ROOM 2.0 - AGNI',
+            date:'10/11/24',
+            link:'/images/event/agni-er.jpg',
             summary:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
         }
     ];
@@ -68,13 +75,13 @@ function Events()
                         }`}
                     >
                         <div className="w-full lg:w-1/2">
-                            <div className={` ${!isImage ? 'aspect-auto' : 'aspect-[16/9]'}  rounded-xl overflow-hidden bg-gray-800`}>
+                            <div className={` ${!isImage ? 'aspect-auto' : idx==4 ? 'aspect-[1/1]': 'aspect-[16/9]'}  rounded-xl overflow-hidden bg-gray-800`}>
                                 {event.link && (
                                     isImage(event.link) ? (
                                         <img
                                             src={event.link}
                                             alt={event.title}
-                                            className="w-full h-full object-cover"
+                                            className={` ${ idx===4 ? 'aspect-[1/1]' : 'h-full w-full  object-cover'}`}
                                         />
                                     ) : (
                                         <iframe

@@ -43,7 +43,7 @@ function Team(){
         {
             name: 'VISHWA PRIYA S',
             position: 'QMS SENIOR LEAD ',
-            tag: placeholder,
+            tag: "Dear Sirius, please don't be jealous",
             link: '/images/team/vishwapriya.jpg',
         },
         {
@@ -61,7 +61,7 @@ function Team(){
         {
             name: 'PRAVEENA M',
             position: 'WORKSHOP SENIOR LEAD ',
-            tag: placeholder,
+            tag: "The stars don't look bigger, but they do look brighter.",
             link: '/images/team/praveena.jpg',
         },
         {

@@ -41,7 +41,7 @@ export default function Home() {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrIndex((prevIndex) => (prevIndex + 1) % contents.length);
-    }, 3000);
+    }, 4000);
 
     return () => clearInterval(intervalId);
   }, []);
