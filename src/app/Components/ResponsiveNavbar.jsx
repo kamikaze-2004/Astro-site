@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -6,7 +6,30 @@ import { isMobile } from "react-device-detect";
 
 export const NavBar = ({ navItems = [], className = "" }) => {
   const pathname = usePathname();
-  const [isOpen, setOpen] = useState(!isMobile);
+  const [isOpen, setOpen] = useState(true);
+  const [show,setShow] = useState(true);
+  const [prevYpos,setPrevYpos] = useState(0);
+  
+  const controlNav = () =>
+  {
+    if(window.scrollY < prevYpos)
+      setShow(true);
+    else
+      setShow(false);
+
+      setPrevYpos(window.scrollY);
+  };
+
+  useEffect(()=>
+    {
+      window.addEventListener('scroll',controlNav);
+
+      return(()=>
+      {
+        window.removeEventListener('scroll',controlNav);
+      })
+
+    },[prevYpos]);
 
   const togglenav = () => {
     setOpen((prev) => !prev);
@@ -24,17 +47,18 @@ export const NavBar = ({ navItems = [], className = "" }) => {
         {isOpen && (
           <motion.div
             initial={{
-              opacity: 1,
+              opacity: 0,
               y: -100,
             }}
             animate={{
-              y: 0,
-              opacity: 1,
+              y: show ? 0 : -100,
+              opacity: show ?  1 : 0,
             }}
             transition={{
-              duration: 0.5,
+              duration: 0.3,
+              ease:"easeInOut"
             }}
-            className={`flex flex-wrap flex-shrink md:flex-nowrap max-w-fullscreen w-fit md:px-2 fixed top-14 lg:top-10 inset-x-0 mx-auto border border-neutral-200 dark:border-white/10 rounded-lg lg:rounded-full bg-transparent backdrop-blur-sm shadow-sm z-[5000] px-4 py-2 md:space-x-2 space-y-0 lg:space-y-2 items-center justify-center ${className}`}
+            className={`flex flex-wrap flex-shrink md:flex-nowrap max-w-fullscreen w-fit md:px-2 fixed top-14 lg:top-10 inset-x-0 mx-auto border border-neutral-200 dark:border-white/10 rounded-lg lg:rounded-full bg-transparent backdrop-blur-sm shadow-sm z-[5000] px-4 py-2 md:space-x-2 space-y-0 lg:space-y-2 items-center justify-center ${className} `}
           >
             {navItems.map((navItem, idx) => {
               const isActive = pathname === navItem.link;
@@ -74,6 +98,7 @@ export const NavBar = ({ navItems = [], className = "" }) => {
 export const Sidebar = ({ navItems = [], className = "" }) => {
   const pathname = usePathname();
   const [isOpen, setOpen] = useState(false);
+  
 
   const toggleNav = () => {
     setOpen((prev) => !prev);
