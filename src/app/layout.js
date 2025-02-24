@@ -7,6 +7,7 @@ import { useEffect,useState } from "react";
 import { ScrollToTopButton } from "./Components/ScrollToTop";
 import { usePathname } from "next/navigation";
 import ResponsiveNavBar from "./Components/ResponsiveNavbar";
+import { Analytics } from '@vercel/analytics/next';
 
 
 const geistSans = Geist({
@@ -59,6 +60,7 @@ export default function RootLayout({ children }) {
         {loading ? <Loader/>:
        <div>       <ResponsiveNavBar navItems={navItems} className="fixed z-50  " />
         {children}
+        <Analytics />
         <ScrollToTopButton/>
         </div>
         }
