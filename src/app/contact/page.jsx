@@ -16,7 +16,7 @@ const socials = [
     },
     {
         social:'Linkedin',
-        link:'https://www.linkedin.com/company/the-astro-club-of-au/',
+        link:'https://www.linkedin.com/in/astro-club-au-31aa2834a/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
         icon:<Linkedin/>,
     },
     {
@@ -57,7 +57,7 @@ function Contacts()
         <div className="mt-4 px-8 flex flex-col  items-center">
             <Phone className="scale-150 border-2 h-8 w-8 bg-slate-800 px-1  border-lime-400 rounded-lg transistion-colors duration-300 ease-in-out hover:text-lime-400 hover:scale-110"/>
             <h2 className="text-bold mt-4  "><TypingText text='+917418224810' speed={0.1}/></h2>
-            <h2 className="text-bold mt-0 "><TypingText text='astroculbau@gmail.com' speed={0.1}/></h2>
+            <h2 className="text-bold mt-0 "><TypingText text='astroclubau@gmail.com' speed={0.1}/></h2>
             
         </div>
         </div>

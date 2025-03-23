@@ -5,7 +5,8 @@ import { useRouter } from "next/navigation";
 
 const socialLinks = [
   { icon: Instagram, href: "https://www.instagram.com/astroclub_au?igsh=MXgycG92d2Jva253dQ==", label: "Instagram" },
-  { icon: Linkedin, href: "https://www.linkedin.com/company/the-astro-club-of-au/", label: "LinkedIn" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/astro-club-au-31aa2834a/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    , label: "LinkedIn" },
   { icon: Mail, href: "mailto:astroclubau@gmail.com", label: "Email" },
 ];
 
