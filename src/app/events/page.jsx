@@ -57,7 +57,7 @@ function Events()
             title:'Astrophotography',
             date:'08/04/25',
             link:'/images/event/Astrophotography.jpg',
-            summary:`As part of Kugelblitz ‘25, the Astro Club and CAC conducted an Astrophotography Workshop led by Mr. D. Vijay Devakumar. He introduced various telescopes used to capture celestial objects and emphasized image and video processing techniques through stacking software. The session was informative, inspiring curiosity and enthusiasm among students to explore the wonders of the night sky.`
+            summary:`As part of Kugelblitz ‘25 , the Astro Club AU and CAC conducted an Astrophotography Workshop led by Mr. D. Vijay Devakumar. He introduced various telescopes used to capture celestial objects and emphasized image and video processing techniques through stacking software. The session was informative, inspiring curiosity and enthusiasm among students to explore the wonders of the night sky.`
         }  
     ];
 
