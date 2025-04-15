@@ -49,13 +49,13 @@ function Events()
         ,
         {
             title:'Visual Astronomy Workshop',
-            date:'07/04/25 - 08/04/25',
+            date:'08/04/25',
             link:'/images/event/Visual_astronomy.jpg',
             summary:`The Visual Astronomy workshop, conducted by Sivasubramanyam from Chennai Astronomy Club as a part of KUGELBLITZ '25 on 8th April, and followed by Moon and Jupiter observation through a telescope. The workshop provided students with a comprehensive understanding of various sky-observing instruments and their usage, while also motivating them to actively engage in astronomical observations using the tools and resources available to them.The workshop's hands on session of viewing the planets through a Dobsonian telescope attracted 200 participants.  They learnt about constellations and sky-observing instruments such as binoculars and telescopes, including guidance on when to use them.`
         },
         {
             title:'Astrophotography',
-            date:'08/04/25',
+            date:'07/04/25',
             link:'/images/event/Astrophotography.jpg',
             summary:`As part of Kugelblitz ‘25 , the Astro Club AU and CAC conducted an Astrophotography Workshop led by Mr. D. Vijay Devakumar. He introduced various telescopes used to capture celestial objects and emphasized image and video processing techniques through stacking software. The session was informative, inspiring curiosity and enthusiasm among students to explore the wonders of the night sky.`
         }  
