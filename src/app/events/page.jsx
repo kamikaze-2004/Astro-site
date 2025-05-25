@@ -45,8 +45,19 @@ function Events()
             date:'10/11/24',
             link:'/images/event/crossword.jpg',
             summary:"The Space Crossword Puzzle event, conducted as part of the AGNI'24 on 10th November . This event involved solving puzzles with a fusion of treasure hunt theme . This event was a great start for informal events to attract people towards our club's ideology . All of the participants enjoyed played with and against their friends and they had a good time.",
-        }
-        ,
+        },
+        {
+            title:'Brainy Bash – Space Rebus & Puzzle Challenge',
+            date:'06/03/2025',
+            link:'/images/event/BrainyBash.jpg',
+            summary:`As part of Techofes 2025, the Astro Club hosted the Brainy Bash event. It included two creative rounds. In the first round, teams solved rebus puzzles by guessing space-related words using images and symbols. In the second round, they pieced together a jumbled space picture within a limited time. The event drew good interest and was both fun and challenging for the participants.`
+        } ,
+        {
+            title:'No Money No Honey – A Space Challenge',
+            date:'07/03/2025',
+            link:'/images/event/NoMoneyNoHoney.jpg',
+            summary:`As part of Techofes 2025, the Astro Club conducted an exciting event called No Money No Honey. The event had two interesting rounds. In the first round, teams took part in a space quiz where they answered questions about planets, missions, and other space facts. The second round was an auction-style game where teams used virtual money to bid on items like satellites and telescopes. The event saw active participation from many students and turned out to be a lively and enjoyable experience.`
+        },
         {
             title:'Visual Astronomy Workshop',
             date:'08/04/25',
@@ -58,7 +69,7 @@ function Events()
             date:'07/04/25',
             link:'/images/event/Astrophotography.jpg',
             summary:`As part of Kugelblitz ‘25 , the Astro Club AU and CAC conducted an Astrophotography Workshop led by Mr. D. Vijay Devakumar. He introduced various telescopes used to capture celestial objects and emphasized image and video processing techniques through stacking software. The session was informative, inspiring curiosity and enthusiasm among students to explore the wonders of the night sky.`
-        }  
+        } 
     ];
 
     const isImage = (link) => 
