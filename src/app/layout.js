@@ -29,7 +29,7 @@ const navItems = [
   { name: "Home", link: "/" },
   { name: "About", link: "/about" },
   { name: "Eyes", link: "/eyes" },
-  { name: "Newsletter", link: "/Newsletter" },
+  { name: "NewsLetter", link: "/NewsLetter" },
   { name: "Events", link: "/events" },
   { name: "Team", link: "/team" },
   {name:'News',link:'/news'},
