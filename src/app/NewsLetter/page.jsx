@@ -9,18 +9,19 @@ export default function NewsletterPage() {
 
   return (
     <main
-      className="pt-24 p-6 max-w-5xl mx-auto min-h-screen text-gray-200 relative"
+      className="relative min-h-screen w-full text-gray-200"
       style={{
-        backgroundImage: "url('/images/space.jpg')", // <-- your image here
+        backgroundImage: "url('/images/space.jpg')", // full-screen background
         backgroundSize: "cover",
         backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
     >
       {/* Overlay for better readability */}
       <div className="absolute inset-0 bg-black/70"></div>
 
-      {/* Content */}
-      <div className="relative z-10">
+      {/* Page Content */}
+      <div className="relative z-10 pt-24 p-6 max-w-5xl mx-auto">
         <h1 className="text-3xl font-bold mb-6 text-white">
           AstroClub Newsletter 🚀
         </h1>
