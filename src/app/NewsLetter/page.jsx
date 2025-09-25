@@ -3,8 +3,14 @@ import Link from "next/link";
 
 export default function NewsletterPage() {
   const newsletters = [
-    { title: "September 2025 Newsletter", file: "/newsletter/September-2025.pdf" },
-    // Add more newsletters here
+    {
+      title: "September 2025 Newsletter",
+      date: "September 2025",
+      description:
+        "Highlights of September: Stargazing event, ISS tracking session, and new AstroClub projects 🚀.",
+      file: "/newsletter/September-2025.pdf",
+    },
+    // Add more issues here
   ];
 
   return (
@@ -12,11 +18,10 @@ export default function NewsletterPage() {
       {/* Background Image */}
       <div className="fixed inset-0 z-0">
         <img
-          src="/images/space.jpg" // <-- same style as your other pages
+          src="/images/iss.jpg"
           alt="space background"
           className="w-full h-full object-cover opacity-80 bg-no-repeat z-0"
         />
-        {/* Dark overlay for readability */}
         <div className="absolute inset-0 bg-black/50" />
       </div>
 
@@ -26,43 +31,41 @@ export default function NewsletterPage() {
           AstroClub Newsletter 🚀
         </h1>
 
-        <p className="mb-8 text-gray-200 text-lg text-center">
-          View and download our monthly newsletters to stay updated with AstroClub
-          events and astronomy insights.
+        <p className="mb-10 text-gray-200 text-lg text-center">
+          Explore our monthly newsletters and stay updated with events,
+          observations, and astronomy insights.
         </p>
 
-        <ul className="space-y-6">
+        <ul className="space-y-8">
           {newsletters.map((nl, idx) => (
             <li
               key={idx}
-              className="border border-gray-700 p-6 rounded-3xl shadow-lg bg-gray-900/80 backdrop-blur-md"
+              className="bg-gray-900/80 backdrop-blur-md border border-gray-700 rounded-3xl shadow-xl p-6"
             >
-              <h2 className="text-2xl font-semibold mb-4 text-white text-center">
-                {nl.title}
-              </h2>
+              {/* Header */}
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                <h2 className="text-2xl font-bold text-lime-300">{nl.title}</h2>
+                <span className="text-sm text-gray-400 italic">{nl.date}</span>
+              </div>
 
-              {/* PDF Viewer */}
-              <iframe
-                src={nl.file}
-                className="w-full h-96 border border-gray-600 mb-4 rounded-lg"
-                title={nl.title}
-              ></iframe>
+              {/* Description */}
+              <p className="text-gray-300 mb-6">{nl.description}</p>
 
-              {/* Links */}
-              <div className="flex justify-center gap-8">
+              {/* Actions */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   href={nl.file}
                   target="_blank"
-                  className="text-blue-400 underline hover:text-blue-500"
+                  className="px-6 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-semibold shadow-md text-center"
                 >
-                  View Fullscreen
+                  📖 Read Newsletter
                 </Link>
                 <a
                   href={nl.file}
                   download
-                  className="text-green-400 underline hover:text-green-500"
+                  className="px-6 py-2 rounded-lg bg-green-600 hover:bg-green-700 text-white font-semibold shadow-md text-center"
                 >
-                  Download
+                  ⬇️ Download PDF
                 </a>
               </div>
             </li>
