@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function NewsletterPage() {
   // List your newsletters here
   const newsletters = [
-    { title: "September 2025 Newsletter", file: "/newsletters/september-2025.pdf" }
+    { title: "September 2025 Newsletter", file: "/newsletter/september-2025.pdf" }
     // Add more monthly newsletters here
   ];
 
