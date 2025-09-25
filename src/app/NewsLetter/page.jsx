@@ -7,7 +7,7 @@ export default function NewsletterPage() {
       title: "September 2025 Newsletter",
       date: "September 2025",
       description:
-        "Highlights of September: Stargazing event, ISS tracking session, and new AstroClub projects 🚀.",
+        "Explore the September edition of the AstroClub Newsletter, featuring Cinema Corner, Science Features, and Mission Watch. 🚀.",
       file: "/newsletter/September-2025.pdf",
     },
     // Add more issues here
@@ -18,7 +18,7 @@ export default function NewsletterPage() {
       {/* Background Image */}
       <div className="fixed inset-0 z-0">
         <img
-          src="/images/iss.jpg"
+          src="/images/space.jpg"
           alt="space background"
           className="w-full h-full object-cover opacity-80 bg-no-repeat z-0"
         />
