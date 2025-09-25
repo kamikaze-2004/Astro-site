@@ -9,11 +9,15 @@ export default function NewsletterPage() {
   ];
 
   return (
-    <main className="pt-24 p-6 max-w-4xl mx-auto">
-      <h1 className="text-3xl font-bold mb-6">AstroClub Newsletter 🚀</h1>
-      <p className="mb-6 text-gray-700">
+        <main className="pt-24 p-6 max-w-4xl mx-auto bg-black text-gray-200 min-h-screen">
+      {/* Page title */}
+      <h1 className="text-3xl font-bold mb-6 text-white">AstroClub Newsletter 🚀</h1>
+
+      {/* Page description */}
+      <p className="mb-6 text-gray-300 text-lg font-medium">
         View and download our monthly newsletters to stay updated with AstroClub events and astronomy insights.
       </p>
+
 
       <ul className="space-y-6">
         {newsletters.map((nl, idx) => (
