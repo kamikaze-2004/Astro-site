@@ -32,7 +32,7 @@ export default function NewsletterPage() {
         </h1>
 
         <p className="mb-10 text-gray-200 text-lg text-center">
-          Explore our monthly newsletters and enjoy Cinema Corner, Science Features, and Mission Watch.
+          Stay inspired and journey through the stars with every edition!
         </p>
 
         <ul className="space-y-8">
