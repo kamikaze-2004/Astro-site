@@ -2,16 +2,17 @@
 import Link from "next/link";
 
 export default function NewsletterPage() {
+  // List your newsletters here
   const newsletters = [
-    { title: "September 2025 Newsletter", file: "/newsletters/september-2025.pdf" },
-    { title: "October 2025 Newsletter", file: "/newsletters/october-2025.pdf" },
+    { title: "September 2025 Newsletter", file: "/newsletters/september-2025.pdf" }
+    // Add more monthly newsletters here
   ];
 
   return (
-    <main className="p-6 max-w-4xl mx-auto">
+    <main className="pt-24 p-6 max-w-4xl mx-auto">
       <h1 className="text-3xl font-bold mb-6">AstroClub Newsletter 🚀</h1>
       <p className="mb-6 text-gray-700">
-        Here you can view and download our monthly newsletters to stay updated with AstroClub events and astronomy insights.
+        View and download our monthly newsletters to stay updated with AstroClub events and astronomy insights.
       </p>
 
       <ul className="space-y-6">
@@ -27,10 +28,21 @@ export default function NewsletterPage() {
             ></iframe>
 
             <div className="flex gap-4">
-              <Link href={nl.file} target="_blank" className="text-blue-600 underline">
+              {/* Open in new tab */}
+              <Link
+                href={nl.file}
+                target="_blank"
+                className="text-blue-600 underline"
+              >
                 View Fullscreen
               </Link>
-              <a href={nl.file} download className="text-green-600 underline">
+
+              {/* Download */}
+              <a
+                href={nl.file}
+                download
+                className="text-green-600 underline"
+              >
                 Download
               </a>
             </div>
@@ -40,4 +52,5 @@ export default function NewsletterPage() {
     </main>
   );
 }
+
 
