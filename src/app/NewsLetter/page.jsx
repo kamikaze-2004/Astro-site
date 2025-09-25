@@ -11,7 +11,7 @@ export default function NewsletterPage() {
     <main
       className="pt-24 p-6 max-w-5xl mx-auto min-h-screen text-gray-200 relative"
       style={{
-        backgroundImage: "url('/images/stars-bg.jpg')", // <-- your image here
+        backgroundImage: "url('/images/space.jpg')", // <-- your image here
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
