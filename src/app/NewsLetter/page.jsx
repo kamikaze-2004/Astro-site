@@ -8,7 +8,7 @@ export default function NewsletterPage() {
       date: "September 2025",
       description:
         "Explore the latest edition of the AstroClub Newsletter, featuring Cinema Corner, Science Features, and Mission Watch.",
-      fileId: "1XeTP-45g5WfuJ6WC0wwjaDiw66oTfqp8", // Google Drive file ID
+      fileId: "12f9AmrlHo81L5ZxiEmDN0cKMMB4au-pK", // Google Drive file ID
     },
     // Add more issues here
   ];
