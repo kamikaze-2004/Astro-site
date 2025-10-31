@@ -15,7 +15,7 @@ export default function NewsletterPage() {
       date: "October 2025",
       description:
         "Explore the latest edition of the AstroClub Newsletter, featuring President's & Vice President's note, Student's Articles, and Events.",
-      fileId: "12f9AmrlHo81L5ZxiEmDN0cKMMB4au-pK", // Google Drive file ID
+      fileId: "1hqyEVlDiXTt40xYSqT-TnXyI8D_AXvjE", // Google Drive file ID
     },
     // Add more issues here
   ];
