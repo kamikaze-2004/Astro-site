@@ -31,7 +31,6 @@ const navItems = [
   { name: "Eyes", link: "/eyes" },
   { name: "NewsLetter", link: "/NewsLetter" },
   { name: "Events", link: "/events" },
-  { name: "Team", link: "/team" },
   {name:'News',link:'/news'},
   { name: "Contact", link: "/contact" }
 ];
