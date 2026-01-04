@@ -18,6 +18,13 @@ export default function NewsletterPage() {
       fileId: "1hqyEVlDiXTt40xYSqT-TnXyI8D_AXvjE", // Google Drive file ID
     },
     // Add more issues here
+    {
+      title: "November 2025 Newsletter",
+      date: "November 2025",
+      description:
+        "Explore the latest edition of the AstroClub Newsletter, featuring Events Head & HR Head note, Student's Articles, and Cinema Corner.",
+      fileId: "1qdQRvCAbeXJ_DxP9sKJXJSsFxdapycjJ", // Google Drive file ID
+    },
   ];
 
   return (
