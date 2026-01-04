@@ -14,7 +14,7 @@ export default function NewsletterPage() {
       title: "October 2025 Newsletter",
       date: "October 2025",
       description:
-        "Explore the latest edition of the AstroClub Newsletter, featuring President's & Vice President's note, Student's Articles, and Ev.",
+        "Explore the latest edition of the AstroClub Newsletter, featuring President's & Vice President's note, Student's Articles, and Events.",
       fileId: "1hqyEVlDiXTt40xYSqT-TnXyI8D_AXvjE", // Google Drive file ID
     },
     // Add more issues here
