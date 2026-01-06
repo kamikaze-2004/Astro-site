@@ -27,7 +27,7 @@ export default function NewsletterPage() {
   ];
 
   return (
-    <div className="relative min-h-screen bg-gray-900 w-full text-white p-4 md:p-8 overflow-hidden">
+    <div className="relative min-h-screen bg-gray-900 w-full text-white p-4 md:p-8">
       {/* Background */}
       <div className="fixed inset-0 z-0">
         <img
@@ -48,11 +48,19 @@ export default function NewsletterPage() {
           Stay inspired and journey through the stars with every edition!
         </p>
 
-        <ul className="space-y-8">
+        <ul className="space-y-10">
           {newsletters.map((nl) => (
             <li
               key={nl.fileId}
-              className="bg-gray-900/80 backdrop-blur-md border border-gray-700 rounded-3xl shadow-xl p-6"
+              className="
+                relative z-20
+                bg-gray-900/90
+                backdrop-blur-md
+                border border-gray-700
+                rounded-3xl
+                shadow-2xl
+                p-6
+              "
             >
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                 <h2 className="text-2xl font-bold text-lime-300">
@@ -66,9 +74,8 @@ export default function NewsletterPage() {
               <p className="text-gray-300 mb-6">{nl.description}</p>
 
               {/* PDF Preview */}
-              <div className="w-full h-96 border border-gray-600 rounded-lg overflow-hidden mb-6">
+              <div className="w-full h-96 border border-gray-600 rounded-lg overflow-hidden mb-6 bg-black">
                 <iframe
-                  key={nl.fileId}
                   src={`https://drive.google.com/file/d/${nl.fileId}/preview`}
                   className="w-full h-full"
                   allow="autoplay"
@@ -100,4 +107,5 @@ export default function NewsletterPage() {
     </div>
   );
 }
+
 
