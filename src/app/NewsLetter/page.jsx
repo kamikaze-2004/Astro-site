@@ -8,27 +8,26 @@ export default function NewsletterPage() {
       date: "September 2025",
       description:
         "Explore the latest edition of the AstroClub Newsletter, featuring Cinema Corner, Science Features, and Mission Watch.",
-      fileId: "12f9AmrlHo81L5ZxiEmDN0cKMMB4au-pK", // Google Drive file ID
+      fileId: "12f9AmrlHo81L5ZxiEmDN0cKMMB4au-pK",
     },
     {
       title: "October 2025 Newsletter",
       date: "October 2025",
       description:
-        "Explore the latest edition of the AstroClub Newsletter, featuring President's & Vice President's note, Student's Articles, and Events.",
-      fileId: "1hqyEVlDiXTt40xYSqT-TnXyI8D_AXvjE", // Google Drive file ID
+        "Explore the latest edition of the AstroClub Newsletter, featuring President's & Vice President's note, Student Articles, and Events.",
+      fileId: "1hqyEVlDiXTt40xYSqT-TnXyI8D_AXvjE",
     },
-    // Add more issues here
     {
       title: "November 2025 Newsletter",
       date: "November 2025",
       description:
-        "Explore the latest edition of the AstroClub Newsletter, featuring Events Head & HR Head note, Student's Articles, and Cinema Corner.",
-      fileId: "1qdQRvCAbeXJ_DxP9sKJXJSsFxdapycjJ", // Google Drive file ID
+        "Explore the latest edition of the AstroClub Newsletter, featuring Events Head & HR Head note, Student Articles, and Cinema Corner.",
+      fileId: "1qdQRvCAbeXJ_DxP9sKJXJSsFxdapycjJ",
     },
   ];
 
   return (
-    <div className="relative min-h-screen bg-gray-900 min-w-full text-white p-4 md:p-8 overflow-hidden">
+    <div className="relative min-h-screen bg-gray-900 w-full text-white p-4 md:p-8 overflow-hidden">
       {/* Background */}
       <div className="fixed inset-0 z-0">
         <img
@@ -39,8 +38,8 @@ export default function NewsletterPage() {
         <div className="absolute inset-0 bg-black/50" />
       </div>
 
-      {/* Page content */}
-      <div className="relative z-10 w-full max-w-5xl mx-auto pt-24">
+      {/* Content */}
+      <div className="relative z-10 max-w-5xl mx-auto pt-24">
         <h1 className="text-4xl md:text-5xl font-bold mb-6 text-center text-lime-400">
           AstroClub Newsletter 🚀
         </h1>
@@ -50,28 +49,31 @@ export default function NewsletterPage() {
         </p>
 
         <ul className="space-y-8">
-          {newsletters.map((nl, idx) => (
+          {newsletters.map((nl) => (
             <li
-              key={idx}
+              key={nl.fileId}
               className="bg-gray-900/80 backdrop-blur-md border border-gray-700 rounded-3xl shadow-xl p-6"
             >
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                <h2 className="text-2xl font-bold text-lime-300">{nl.title}</h2>
-                <span className="text-sm text-gray-400 italic">{nl.date}</span>
+                <h2 className="text-2xl font-bold text-lime-300">
+                  {nl.title}
+                </h2>
+                <span className="text-sm text-gray-400 italic">
+                  {nl.date}
+                </span>
               </div>
 
               <p className="text-gray-300 mb-6">{nl.description}</p>
 
-              {/* PDF Viewer */}
-              <div className="w-full border border-gray-600 rounded-lg mb-6 h-96">
+              {/* PDF Preview */}
+              <div className="w-full h-96 border border-gray-600 rounded-lg overflow-hidden mb-6">
                 <iframe
+                  key={nl.fileId}
                   src={`https://drive.google.com/file/d/${nl.fileId}/preview`}
-                  width="100%"
-                  height="100%"
-                  frameBorder="0"
+                  className="w-full h-full"
                   allow="autoplay"
                   title={nl.title}
-                ></iframe>
+                />
               </div>
 
               {/* Actions */}
@@ -79,14 +81,14 @@ export default function NewsletterPage() {
                 <Link
                   href={`https://drive.google.com/file/d/${nl.fileId}/view`}
                   target="_blank"
-                  className="px-6 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-semibold text-center"
+                  className="px-6 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 font-semibold text-center"
                 >
                   📖 Read Fullscreen
                 </Link>
+
                 <a
                   href={`https://drive.google.com/uc?export=download&id=${nl.fileId}`}
-                  download
-                  className="px-6 py-2 rounded-lg bg-green-600 hover:bg-green-700 text-white font-semibold text-center"
+                  className="px-6 py-2 rounded-lg bg-green-600 hover:bg-green-700 font-semibold text-center"
                 >
                   ⬇️ Download PDF
                 </a>
@@ -98,3 +100,4 @@ export default function NewsletterPage() {
     </div>
   );
 }
+
