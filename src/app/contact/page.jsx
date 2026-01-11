@@ -56,7 +56,7 @@ function Contacts()
         </div>
         <div className="mt-4 px-8 flex flex-col  items-center">
             <Phone className="scale-150 border-2 h-8 w-8 bg-slate-800 px-1  border-lime-400 rounded-lg transistion-colors duration-300 ease-in-out hover:text-lime-400 hover:scale-110"/>
-            <h2 className="text-bold mt-4  "><TypingText text='+917418224810' speed={0.1}/></h2>
+            <h2 className="text-bold mt-4  "><TypingText text='+918637451579' speed={0.1}/></h2>
             <h2 className="text-bold mt-0 "><TypingText text='astroclubau@gmail.com' speed={0.1}/></h2>
             
         </div>
