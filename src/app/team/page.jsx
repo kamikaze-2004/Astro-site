@@ -15,8 +15,8 @@ function Team() {
       name: "Bala Sabarish S H",
       position: "Vice President & Corporate Relations Executive",
       tagline: "It's not who I'm underneath, but what I do that defines me",
-      link: "/images/team/balasabarish.jpg",
-      tag: "grey",
+      link: "/images/team/balasabarish.JPG",
+      tag: "purple",
     },
     {
       name: "Arthi S",
