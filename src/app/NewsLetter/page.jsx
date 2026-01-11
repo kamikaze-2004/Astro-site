@@ -97,4 +97,4 @@ export default function NewsletterPage() {
       </div>
     </div>
   );
-}   the november newsletter is not displaaying give me full correct code 
+}  
