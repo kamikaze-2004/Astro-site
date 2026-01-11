@@ -30,6 +30,7 @@ const navItems = [
   { name: "About", link: "/about" },
   { name: "Eyes", link: "/eyes" },
   { name: "NewsLetter", link: "/NewsLetter" },
+  { name: "Team", link: "team" },
   { name: "Events", link: "/events" },
   {name:'News',link:'/news'},
   { name: "Contact", link: "/contact" }
