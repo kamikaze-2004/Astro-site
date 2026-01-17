@@ -5,7 +5,7 @@ export default function AstroProjectsPage() {
   const projects = Array.from({ length: 10 }, (_, i) => ({
     id: i + 1,
     title: `Astro Project ${i + 1}`,
-    image: `/images/projects/${i + 1}.jpeg`,
+    image: `/images/projects/${i + 1}.jpg`,
   }));
 
   return (
@@ -37,13 +37,13 @@ export default function AstroProjectsPage() {
               key={project.id}
               className="bg-gray-900/80 backdrop-blur-md border border-gray-700 rounded-3xl shadow-xl overflow-hidden"
             >
-              {/* Image */}
-              <div className="relative w-full h-64">
+              {/* Image container */}
+              <div className="relative w-full h-64 bg-black flex items-center justify-center">
                 <Image
                   src={project.image}
                   alt={project.title}
                   fill
-                  className="object-cover"
+                  className="object-contain"
                 />
               </div>
 
@@ -60,4 +60,3 @@ export default function AstroProjectsPage() {
     </div>
   );
 }
-
