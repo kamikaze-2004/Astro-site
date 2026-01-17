@@ -5,7 +5,7 @@ export default function AstroProjectsPage() {
   const projects = Array.from({ length: 10 }, (_, i) => ({
     id: i + 1,
     title: `Astro Project ${i + 1}`,
-    image: `/images/projects/${i + 1}.jpg`,
+    image: `/images/projects/${i + 1}.jpeg`,
   }));
 
   return (
