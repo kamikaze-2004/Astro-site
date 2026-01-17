@@ -36,7 +36,7 @@ function Team() {
       name: "Thema E S",
       position: "Content Creation Executive",
       tagline: "Space teaches us that even in vast unknowns, meaning exists",
-      link: "/images/team/thema.jpg",
+      link: "/images/team/thema.HEIC",
       tag: "green",
     },
     {
