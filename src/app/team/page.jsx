@@ -5,6 +5,12 @@ import { motion } from "framer-motion";
 function Team() {
   const team = [
     {
+      name: "Dr.A.Suresh Babu",
+      position: "Club Advisor",
+      link: "/images/team/clubadvisor.jpeg",
+      tag: "purple",
+    },
+    {
       name: "Sivani K U",
       position: "President",
       tagline: "Mapping minds and guiding stars where Earth meets the cosmos",
