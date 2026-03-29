@@ -32,7 +32,7 @@ const socials = [
     {
         social: 'WhatsApp',
         link: 'https://whatsapp.com/channel/0029Vb7iaHP5Ui2f10mudW3Y',
-        icon: <MessageCircle className="text-white" />
+        icon: <MessageCircle />   // WhatsApp-like icon
     }
 ];
 
@@ -65,11 +65,7 @@ function Contacts() {
                         {socials.map((social) => (
                             <span
                                 key={social.social}
-                                className={`scale-150 backdrop-blur-sm border-2 p-1 rounded-xl transition-all duration-300 ease-in-out hover:scale-110
-                                ${social.social === 'WhatsApp'
-                                    ? 'bg-green-600 border-green-400 hover:bg-green-500'
-                                    : 'bg-slate-800 border-lime-400 hover:text-lime-400'
-                                }`}
+                                className="scale-150 backdrop-blur-sm border-2 bg-slate-800 p-1 border-lime-400 rounded-xl transition-all duration-300 ease-in-out hover:text-lime-400 hover:scale-110"
                             >
                                 <a href={social.link} target="_blank" rel="noopener noreferrer">
                                     {social.icon}
