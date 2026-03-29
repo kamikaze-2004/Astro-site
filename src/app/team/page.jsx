@@ -7,7 +7,7 @@ function Team() {
     {
       name: "Dr.A.Suresh Babu",
       position: "Club Advisor",
-      link: "/images/team/clubadvisor.jpeg",
+      link: "/images/team/clubadvisor.jpg",
       tag: "purple",
     },
     {
